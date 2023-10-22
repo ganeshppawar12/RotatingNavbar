@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Rotating Nvbar</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Amazing Article</h1>
+           
+            <p>Bharatanatyam (Tamil: பரதநாட்டியம்) is an Indian classical dance form that originated in Tamil Nadu.It is one of eight Indian classical dance forms recognized by the Sangeet Natak Akademi, and expresses South Indian religious themes and spiritual ideas, particularly of Shaivism and in general of Hinduism. 
+               </p>
+
+            <h3>Bharatanatyam</h3>
+
+            <img src="https://images.unsplash.com/photo-1463592177119-bab2a00f3ccb?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            
+            <p>A description of precursors of Bharatanatyam from the 2nd century CE can be found in the ancient Tamil epic Silappatikaram, while temple sculptures of the 6th to 9th century CE suggest dance was a refined performance art by the mid-1st millennium CE. Sadiraattam, which was renamed Bharatanatyam in 1932, is the oldest classical dance tradition in India.[8] Bharatanatyam is the state dance form of Tamil Nadu.</p>
+
+
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-user-alt"></i> About</li>
+            <li><i class="fas fa-address-book"></i> Contact</li>
+        </ul>
+    </nav>
+
+<script>
+    const closebtn = document.getElementById('close')
+    const openbtn = document.getElementById('open')
+    const container  = document.querySelector('.container');
+    console.log(open);
+
+    openbtn.addEventListener('click',()=>{
+        container.classList.add("showNav");
+        console.log("hi")
+    });
+   closebtn.addEventListener('click',()=>{
+    container.classList.remove('showNav');
+    console.log("hello")
+
+})
+</script>
+</body>
+</html>
